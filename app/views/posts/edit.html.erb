@@ -1,0 +1,6 @@
+<%= form_for @post, url: {action: "update"}, html: {class: "post_form"} do |f| %>
+  <%= f.text_field :title %>
+  <%= f.date_field :publish_date %>
+  <%= f.text_area  :content %>
+  <%= f.submit %>
+<% end %>
