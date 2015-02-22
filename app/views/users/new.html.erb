@@ -1,0 +1,7 @@
+<%= form_for @user, url: {action: "create"}, html: {class: "signup_form"} do |f| %>
+  <%= f.text_field     :username, placeholder: "username" %>
+  <%= f.password_field :password, placeholder: "password" %>
+  <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
+  <%= f.email_field    :email, placeholder: "email" %>
+  <%= f.submit "Sign up" %>
+<% end %>
