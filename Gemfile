@@ -26,8 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-# User faker for seeding
-require 'faker'
+# Use faker for seeding
+gem 'faker'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -47,6 +47,8 @@ group :development, :test do
 end
 
 # Requiring per heroku instructions
-require 'rails_12factor'
+group :production do
+  gem 'rails_12factor'
+end
 
 ruby "2.2.0"
