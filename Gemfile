@@ -46,3 +46,7 @@ group :development, :test do
   gem 'spring'
 end
 
+# Requiring per heroku instructions
+require 'rails_12factor'
+
+ruby "2.2.0"
