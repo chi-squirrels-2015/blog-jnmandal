@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root "posts#index"
+
   # auth routes (fuck conventions)
   get "/login"   => "sessions#new"
   post "/login"  => "sessions#create"
@@ -7,7 +9,6 @@ Rails.application.routes.draw do
   get "/signup"  => "users#new"
   post "/signup" => "users#create"
 
-  resources :users
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
