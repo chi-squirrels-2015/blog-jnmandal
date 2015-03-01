@@ -12,7 +12,7 @@ end
 
 users = User.all
 
-20.times do
+110.times do
   Post.create!(title: Faker::Lorem.sentence(3, true, 0), publish_date: Faker::Date.backward(90), content: Faker::Lorem.paragraph(8), user: users.sample)
 end
 
