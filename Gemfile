@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use faker for seeding
 gem 'faker'
 
+# Use kaminari for paginations
+gem 'kaminari'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
